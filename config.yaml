@@ -1,0 +1,6 @@
+---
+baseURL: "http://example.org/"
+languageCode: "en-us"
+title: "Blog"
+theme:
+  - "github.com/theNewDynamic/gohugo-theme-ananke"
