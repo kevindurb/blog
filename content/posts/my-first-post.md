@@ -2,7 +2,7 @@
 title: "Documenting projects by adding another project..."
 date: 2020-10-12T10:26:03-06:00
 draft: false
-featured_image: "/main_splash.jpg"
+featured_image: "/typewriter.jpg"
 ---
 I enjoy projects. Projects are my way of being creative and my outlet to fuel my
 need to learn new things! But i have a problem... I tend to have a lot of
