@@ -20,6 +20,7 @@ sitemap:
   filename: "sitemap.xml"
 
 params:
+  comments: true
   showShareButtons: true
   showReadingTime: true
   homeInfoParams:
