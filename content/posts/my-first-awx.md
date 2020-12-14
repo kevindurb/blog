@@ -13,9 +13,9 @@ their huge benefits are engrained in me and so the idea that I could describe my
 home infrastructure as code and then "auto deploy" that code after its pushed up
 just rings so true with me. Ever since I started using ansible with my first
 home server I have been wanting to setup a CD process for my ansible playbooks,
-for a while I had a jenkins server setup to do just this but it just wasnt
+for a while I had a jenkins server setup to do just this but it just wasn't
 great. Jenkins has very minimal ansible support and what it has is very raw.
-It feels a lot like I am just concatinating commands together and has no support
+It feels a lot like I am just concatenating commands together and has no support
 for anything fun like dynamic inventories and such. After doing a little more
 research I found a tool called Ansible Tower. Tower is an enterprise tool made
 by Red Hat themselves to run ansible and the best part is it has an upstream
@@ -28,7 +28,7 @@ ansible. I could list off hundreds of amazing things that AWX does but if you're
 at all interested [go check it out for yourself](https://www.ansible.com/products/tower).
 
 AWX has some decent system requirements so I decided my best chance was to
-create a new vm. I built a quick playbook to to run some default roles i like to
+create a new vm. I built a quick playbook to to run some default roles I like to
 run (`oefenweb.dns`, `geerlingguy.github-users`, `geerlingguy.ntp`,
 `geerlingguy.security`) and then ssh'd into the vm and followed the awx install
 instructions for docker-compose [here](https://github.com/ansible/awx/blob/devel/INSTALL.md).
@@ -44,10 +44,10 @@ of these together and added a hourly schedule and boom I was up and running!
 Adding a job to run another playbook that deploys my vm for docker containers
 was even easier with all the inventory and credentials in place.
 
-Now that i have a central place to run my ansible playbooks it is even easier to
-add to my home infrastructure. Overall Im super impressed by AWX and its
+Now that I have a central place to run my ansible playbooks it is even easier to
+add to my home infrastructure. Overall I'm super impressed by AWX and its
 flexibility and power. Stay tuned I have even more fun planned for my home
-infrastructure (pst I'm gonna be setting up a wireguard vpn so i dont have to
-port forward and use dynamic dns anymore).I also have another project ive been
+infrastructure (pst I'm gonna be setting up a wireguard vpn so I dont have to
+port forward and use dynamic dns anymore).I also have another project I've been
 slowly putting together that is pushing my electronics and embedded programming
 skillz. But that is for yet another future blog post...
