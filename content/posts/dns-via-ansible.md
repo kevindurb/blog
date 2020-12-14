@@ -2,7 +2,6 @@
 title: "DNS via Ansible"
 date: 2020-10-14T15:05:20-06:00
 draft: false
-featured_image: "/servers.jpg"
 ---
 I manage all my self hosted services with ansible (More about that in a future
 post, but for now just go check out github.com/kevindurb/infra) and up until

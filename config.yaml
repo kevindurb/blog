@@ -1,0 +1,19 @@
+baseURL: "https://kevindurb.github.io/blog/"
+languageCode: "en-us"
+title: "My Project Addiction"
+theme: "github.com/adityatelange/hugo-PaperMod"
+
+DefaultContentLanguage: "en"
+SectionPagesMenu: "main"
+googleAnalytics: ""
+enableRobotsTXT: true
+
+sitemap:
+  changefreq: "monthly"
+  priority: 0.5
+  filename: "sitemap.xml"
+
+params:
+  socialIcons:
+    - name: github
+      url: "https://github.com/kevindurb"
