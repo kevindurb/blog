@@ -1,7 +1,7 @@
 ---
 title: "Homelab Pt 1 - Goal"
 date: 2020-12-14T09:38:07-07:00
-draft: true
+draft: false
 ---
 _Homelab is a series about getting started in building a "homelab". We will be going through everything from "why" to "how" and all things in between._
 
