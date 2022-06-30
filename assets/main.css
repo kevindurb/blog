@@ -50,7 +50,7 @@
     --bs-body-font-size: 1rem;
     --bs-body-font-weight: 400;
     --bs-body-line-height: 1.5;
-    --bs-body-color: var(--bs-light);
+    --bs-body-color: var(--bs-gray-400);
     --bs-body-bg: var(--bs-dark);
     --bs-border-width: 1px;
     --bs-border-style: solid;
@@ -68,5 +68,4 @@
     --bs-code-color: #d63384;
     --bs-highlight-bg: #fff3cd;
   }
-
 }
