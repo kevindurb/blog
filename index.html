@@ -1,0 +1,12 @@
+---
+title: My Project Addiction
+---
+<h1>{{ page.title }}</h1>
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}" class="h4">{{ post.title }}</a>
+      {{ post.excerpt }}
+    </li>
+  {% endfor %}
+</ul>
