@@ -16,7 +16,7 @@ via flatpak is clunky. But wouldn't it be cool if I could run my entire
 development environment inside a container...
 
 ## Distrobox to the rescue!
-Distrobox is a project that makes it simple to run and shell into a container
+[Distrobox](https://distrobox.privatedns.org/) is a project that makes it simple to run and shell into a container
 and share much of the host system into the container. This allows you to have a
 read-write system that can interact much like the host its running on. You can
 choose almost any base container to run but also you can create your own. Here's
@@ -110,4 +110,5 @@ forwarded out of the container to the host.
 I can run this container on any linux system by just installing distrobox and
 podman/docker and running two commands. And when I want updates I just blow away
 the container, pull the latest one and start it back up again. I can also run
-all the tools I love on systems that may not be supported by the tools.
+all the tools I love on systems that may not be supported by the tools. This is
+a super cool paradigm and I encourage everyone to go take a look!
