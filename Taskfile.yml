@@ -10,4 +10,9 @@ tasks:
     cmds:
       - cmd: rm -rf dist && mkdir dist
       - for: sources
-        cmd: pandoc -s -o dist/{{base .ITEM | splitList "." | first}}.html {{.ITEM}}
+        cmd: >
+          pandoc 
+          --lua-filter=./filters/links-to-html.lua
+          --standalone
+          --output dist/{{base .ITEM | splitList "." | first}}.html
+          {{.ITEM}}
