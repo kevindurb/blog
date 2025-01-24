@@ -6,7 +6,7 @@ tasks:
   default: task --list-all
   build:
     sources:
-      - ./posts/*.md
+      - ./pages/*.md
     cmds:
       - cmd: rm -rf dist && mkdir dist
       - for: sources
