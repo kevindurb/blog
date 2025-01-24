@@ -1,0 +1,26 @@
+---
+name: Build and Deploy
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Task
+        uses: arduino/setup-task@v2
+      - run: sudo apt install pandoc
+      - run: task build
+      - name: Upload static files as artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy GitHub Pages site
+        uses: actions/deploy-pages@v4
+                
