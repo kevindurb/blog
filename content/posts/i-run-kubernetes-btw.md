@@ -45,7 +45,7 @@ apps to mess with things. Kubernetes lets me put a couple computers together int
 a cluster and then just use yaml to describe the containers I want to run, the
 networking I want, the configuration I want, everything. Changing things out is
 as easy as just changing lines of text and waiting for it to deploy. This is probably
-so appealing to be because I'm a software engineer and love infrastructre as code.
+so appealing to me because I'm a software engineer and love infrastructure as code.
 
 ## Whats my homelab now?
 
