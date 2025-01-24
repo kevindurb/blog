@@ -3,7 +3,7 @@ title: I Run Kubernetes Btw
 date: 2025-01-24
 ---
 
-Its been quite a while since i've posted here so I think its about time i gave
+Its been quite a while since I've posted here so I think it's about time I gave
 a homelab update! So we're gonna talk about what my homelab used to be, the pain
 points I had with that setup and where I am now and why!
 
