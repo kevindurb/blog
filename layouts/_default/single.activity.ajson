@@ -1,0 +1,40 @@
+{
+    "@context": [
+        "https://www.w3.org/ns/activitystreams"
+    ],
+    "to": ["https://www.w3.org/ns/activitystreams#Public"],
+    {{- if .Param "indieweb.reply.link" }}
+    "inReplyTo": "{{ .Param "indieweb.reply.link" }}",
+    {{ end -}}
+    {{- if .Title }}
+    "name": {{ (htmlUnescape .Title | safeHTML) | jsonify }},
+    "type": "Article",
+    {{- else -}}
+    "type": "Note",
+    {{ end -}}
+    "content": {{ .Content | jsonify }},
+    {{- if .Params.images }}
+    "attachment": [
+        {{ $delimiter := "" -}}
+        {{ range .Params.images }}
+        {{- $delimiter -}}{
+            "type": "Image",
+            "url": "{{ . }}",
+            {{ $lowerUrl := lower . -}}
+            {{- if or ( strings.HasSuffix $lowerUrl "jpg" ) ( strings.HasSuffix $lowerUrl "jpeg" ) -}}
+            "mediaType": "image/jpeg"
+            {{- else -}}
+            "mediaType": "image/png"
+            {{- end }}
+        }
+        {{- $delimiter = "," -}}
+        {{ end }}
+    ],
+    {{ end -}}
+    "mediaType": "text/html",
+    "published": {{ dateFormat "2006-01-02T15:04:05-07:00" .Lastmod | jsonify }},
+    "updated": {{ dateFormat "2006-01-02T15:04:05-07:00" .Date | jsonify }},
+    "id": "{{ .Permalink }}",
+    "url": "{{ .Permalink }}",
+    "attributedTo": "{{ "" | absLangURL }}"
+}

@@ -1,0 +1,33 @@
+{
+    "@context": [
+        "https://www.w3.org/ns/activitystreams"
+    ],
+    "id": "{{ "" | absLangURL }}",
+    "type": "Person",
+    "name": {{ .Site.Title | jsonify }},
+    "summary": {{ .Site.Params.description | jsonify }},
+    "attachment": [
+        {
+            "type": "PropertyValue",
+            "name": "Blog",
+            "value": "<a rel=\"me\" target=\"_blank\" href=\"{{ "" | absLangURL }}\">{{ strings.TrimSuffix "/" (strings.TrimPrefix "https://" (strings.TrimPrefix "http://" ("" | absLangURL))) }}</a>"
+        }
+    ],
+    "preferredUsername": "{{ .Site.Language.Lang }}"
+    {{ with .Site.Author.avatar -}}
+    ,"icon": {
+        "type": "Image",
+        "url": "{{ . | absURL }}"
+    }
+    {{- end }}
+    {{ with .Site.Params.activitypub.inbox -}}
+    ,"inbox": "{{ . }}"
+    {{- end }}
+    {{ with .Site.Params.activitypub.publickeypem -}}
+    ,"publicKey": {
+        "id": "{{ "" | absLangURL }}#main-key",
+        "owner": "{{ "" | absLangURL }}",
+        "publicKeyPem": "{{ . }}"
+    }
+    {{- end }}
+}

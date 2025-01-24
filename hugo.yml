@@ -26,3 +26,24 @@ menu:
     - name: Tags
       url: /tags
       weight: 4
+
+outputFormats:
+  activity:
+    mediaType: application/activity+json
+    baseName: index
+    isPlainText: true
+    notAlternative: true
+
+mediaTypes:
+  application/activity+json:
+    suffixes:
+      - ajson
+
+outputs:
+  home:
+    - html
+    - rss
+    - activity
+  page:
+    - html
+    - activity
