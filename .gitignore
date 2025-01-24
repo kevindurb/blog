@@ -1,4 +1,3 @@
-_site/
-.jekyll-cache/
 .task/
-dist/
+public/
+.hugo_build.lock

@@ -4,15 +4,3 @@ version: '3'
 
 tasks:
   default: task --list-all
-  build:
-    sources:
-      - ./pages/*.md
-    cmds:
-      - cmd: rm -rf dist && mkdir dist
-      - for: sources
-        cmd: >
-          pandoc 
-          --lua-filter=./filters/links-to-html.lua
-          --standalone
-          --output dist/{{base .ITEM | splitList "." | first}}.html
-          {{.ITEM}}

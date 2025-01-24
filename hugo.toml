@@ -1,0 +1,4 @@
+baseURL = 'https://blog.kevindurbin.com/'
+languageCode = 'en-us'
+title = 'My Project Addiction'
+theme = 'ananke'
