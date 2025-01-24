@@ -37,7 +37,7 @@ kubernetes for his homelab and he finally convinced me to switch mine over.
 
 ## Why Kubernetes??
 
-To answer this question we need to walk through what I use my homelab for. This
+To answer this question, we need to walk through what I use my homelab for. This
 is different for everyone of course. But for me the biggest part of having a homelab
 is learning. I want a place that I can easily deploy containers for everything
 from personal projects to my media stack. I enjoy swapping out apps for different
@@ -49,7 +49,7 @@ so appealing to me because I'm a software engineer and love infrastructure as co
 
 ## Whats my homelab now?
 
-I've inherited a few more discarded computers from work that ive turned into a
+I've inherited a few more discarded computers from work that I've turned into a
 kubernetes cluster! I'm running 4 more traditional computers in 2U rack mount cases.
 Each node has an i5-4590 and 16GB of ram. Each machine also has a GPU, 3 of them
 have GTX-750Tis which I got with the machines from work and one has my old gaming
@@ -65,11 +65,11 @@ a really great process similar to what im used to as a software engineer.
 
 ## What now?
 
-Well at this point my kubernetes cluster is constantly in flux, but thats why it
+Well at this point my kubernetes cluster is constantly in flux, but that's why it
 exists! I'm constantly changing how I manage persistent storage, secrets, etc,
-and Kubernetes lets me do that! If you havent gotten a chance to explore kubernetes
-yet I'd say... well dont... probably... Heres the deal, if you dont yet understand
+and Kubernetes lets me do that! If you haven't gotten a chance to explore kubernetes
+yet I'd say... well don't... probably... Here's the deal, if you dont yet understand
 how containers work, how dns works, and like a ton of other topics then kubernetes
 is just not for you yet... Go explore building and running containers in a simpler way
 with like docker compose before you dive into kubernetes! I'm a firm believer in
-the "Learn (x) the hard way" mantra, but thats probably for another blog post...
+the "Learn (x) the hard way" mantra, but that's probably for another blog post...
