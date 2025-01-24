@@ -1,6 +1,9 @@
 ---
-title: "My Dev Environment Anywhere"
+title: 'My Dev Environment Anywhere'
+date: 2023-01-24
+draft: false
 ---
+
 So I recently bought a steam deck. If you don't know what a steam deck is go
 check it out at [steamdeck.com](https://steamdeck.com)! Ultimately its a device
 built for playing PC games but portable. Its got an AMD x86 APU with 16GB of
@@ -16,11 +19,13 @@ via flatpak is clunky. But wouldn't it be cool if I could run my entire
 development environment inside a container...
 
 ## Distrobox to the rescue!
+
 [Distrobox](https://distrobox.privatedns.org/) is a project that makes it simple to run and shell into a container
 and share much of the host system into the container. This allows you to have a
 read-write system that can interact much like the host its running on. You can
 choose almost any base container to run but also you can create your own. Here's
 my `Containerfile` at the time of writing this article
+
 ```
 FROM registry.fedoraproject.org/fedora-toolbox:37
 
@@ -103,6 +108,7 @@ RUN chmod +x /usr/bin/host-spawn
 
 ENTRYPOINT ["/bin/zsh"]
 ```
+
 There's a lot going on here but mostly I start with a fedora image, install a
 bunch of tools that I enjoy, and add some symlinks to allow some commands to be
 forwarded out of the container to the host.
