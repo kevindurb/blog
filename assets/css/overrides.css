@@ -5,3 +5,8 @@
   --hovercolor: navy;
   --darkMaincolor: var(--maincolor);
 }
+
+html,
+p {
+  font-family: 'Roboto Mono', monospace;
+}
