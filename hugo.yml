@@ -1,0 +1,9 @@
+---
+baseURL: https://blog.kevindurbin.com/
+languageCode: en-us
+title: My Project Addiction
+theme: archie
+params:
+  mode: auto
+  customcss:
+    - css/overrides.css

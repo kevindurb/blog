@@ -1,0 +1,7 @@
+:root {
+  --maincolor: dodgerblue;
+  --bordercl: dodgerblue;
+  --callouctcolor: dodgerblue;
+  --hovercolor: navy;
+  --darkMaincolor: var(--maincolor);
+}

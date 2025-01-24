@@ -1,8 +1,8 @@
 ---
-title: "My First Awx"
-date: 2020-11-05T08:02:29-07:00
-draft: false
+title: My First Awx
+date: 2020-11-05
 ---
+
 I'm a little bit of an ansible fan boy. But for good reason! Ansible is a
 fantastic way to provision, deploy and update machines and applications. It can
 do just about anything you can think of and it make one thing very easy,

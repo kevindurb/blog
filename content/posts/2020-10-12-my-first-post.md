@@ -1,8 +1,8 @@
 ---
-title: "Documenting projects by adding another project..."
-date: 2020-10-12T10:26:03-06:00
-draft: false
+title: Documenting projects by adding another project...
+date: 2020-10-12
 ---
+
 I enjoy projects. Projects are my way of being creative and my outlet to fuel my
 need to learn new things! But i have a problem... I tend to have a lot of
 projects going on at the same time. Projects of all different sizes, from quick

@@ -1,8 +1,8 @@
 ---
-title: "DNS via Ansible"
-date: 2020-10-14T15:05:20-06:00
-draft: false
+title: DNS via Ansible
+date: 2020-10-14
 ---
+
 I manage all my self hosted services with ansible (More about that in a future
 post, but for now just go check out github.com/kevindurb/infra) and up until
 recently ive recently needed to go to three different places
@@ -21,6 +21,7 @@ that ansible has a cloudflare and an ipify module! Ipify lets me fetch my
 external ip address and the cloudflare module lets me update my DNS records. A
 small ansible script lets me pull my ip address then use that to update the dns
 records...
+
 ```
   vars:
     zone: kevindurbin.com

@@ -1,7 +1,6 @@
 ---
-title: 'My Dev Environment Anywhere'
+title: My Dev Environment Anywhere
 date: 2023-01-24
-draft: false
 ---
 
 So I recently bought a steam deck. If you don't know what a steam deck is go

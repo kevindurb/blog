@@ -1,11 +1,12 @@
 ---
-title: "Homelab Pt 1 - Goal"
-date: 2020-12-14T09:38:07-07:00
-draft: false
+title: Homelab Pt 1 - Goal
+date: 2020-12-14
 ---
+
 _Homelab is a series about getting started in building a "homelab". We will be going through everything from "why" to "how" and all things in between._
 
 ## You need a goal
+
 Every project is better when theres a clear goal in mind. Any questions you have
 along the way of _"which tool should I use?"_ or _"how much money or time should I
 invest in this?"_ can be much more easily answered when you have a goal in mind.

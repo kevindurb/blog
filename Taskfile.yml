@@ -4,3 +4,5 @@ version: '3'
 
 tasks:
   default: task --list-all
+
+  new-post: hugo new content ./content/posts/{{now | date "2006-01-02"}}-{{.TITLE}}.md
