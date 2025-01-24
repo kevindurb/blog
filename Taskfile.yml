@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=https://taskfile.dev/schema.json
+---
+version: '3'
+
+tasks:
+  default: task --list-all
+  build:
+    sources:
+      - ./posts/*.md
+    cmds:
+      - cmd: rm -rf dist && mkdir dist
+      - for: sources
+        cmd: pandoc -s -o dist/{{base .ITEM | splitList "." | first}}.html {{.ITEM}}
